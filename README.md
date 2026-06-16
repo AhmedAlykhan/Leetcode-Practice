@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/AhmedAlykhan/Leetcode-Practice/tree/master/0001-two-sum) |
 | [0169-majority-element](https://github.com/AhmedAlykhan/Leetcode-Practice/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/AhmedAlykhan/Leetcode-Practice/tree/master/0217-contains-duplicate) |
+| [0283-move-zeroes](https://github.com/AhmedAlykhan/Leetcode-Practice/tree/master/0283-move-zeroes) |
 ## Hash Table
 |  |
 | ------- |
@@ -44,4 +45,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/AhmedAlykhan/Leetcode-Practice/tree/master/0169-majority-element) |
+## Two Pointers
+|  |
+| ------- |
+| [0283-move-zeroes](https://github.com/AhmedAlykhan/Leetcode-Practice/tree/master/0283-move-zeroes) |
 <!---LeetCode Topics End-->
