@@ -1,26 +1,25 @@
 class Solution {
     public int maxArea(int[] height) {
-        int left=0, right=height.length-1;
-        int maxArea = 0,currentArea=0;
-        int currentWidth=0,currentHeight=0;
+        int left = 0;
+        int right = height.length - 1;
+        int maxArea = 0;
 
-
-        while (left<right){
-            currentWidth = right-left;
-            currentHeight=Math.min(height[left],height[right]);
-            currentArea=currentWidth*currentHeight;
-            maxArea=Math.max(maxArea,currentArea);
+        while (left < right) {
+            // Fix 1: Calculate width as (right - left) to avoid negative area
+            int currentWidth = right - left;
+            int currentHeight = Math.min(height[left], height[right]);
+            int currentArea = currentWidth * currentHeight;
             
-             
-           if (height[left]<height[right]){
+            maxArea = Math.max(maxArea, currentArea);
+            
+            // Fix 2: Simplified branching logic
+            if (height[left] < height[right]) {
                 left++;
-            }
-            else if(height[left]==height[right]||height[left]>height[right]){
+            } else {
                 right--;
             }
-           
+        }
         
+        return maxArea;
     }
-    return maxArea;
-}
 }
